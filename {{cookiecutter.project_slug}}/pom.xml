@@ -14,19 +14,17 @@
 	<url>https://github.com/roycetech/{{cookiecutter.project_slug}}</url>
 
 	<licenses>
-		{%- if cookiecutter.license == "MIT" -%}
+{%- if cookiecutter.license == "MIT" -%}
 		<license>
 			<name>MIT License</name>
 			<url>https://mit-license.org</url>
 		</license>
-
-		{%- elif cookiecutter.license == "Apache Software License 2.0" -%}
+{%- elif cookiecutter.license == "Apache Software License 2.0" -%}
 		<license>
 			<name>Apache License 2.0</name>
 			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
 		</license>
-
-		{% endif %}
+{% endif %}
 	</licenses>
 
 	<developers>
@@ -38,7 +36,7 @@
 
 	<scm>
 		<connection>scm:git:git://github.com/roycetech/{{cookiecutter.project_slug}}.git</connection>
-		<developerConnection>scm:git:ssh://github.com:roycetech/array-utils.git</developerConnection>
+		<developerConnection>scm:git:ssh://github.com:roycetech/{{cookiecutter.project_slug}}.git</developerConnection>
 		<url>https://github.com/roycetech/{{cookiecutter.project_slug}}/tree/master</url>
 	</scm>
 

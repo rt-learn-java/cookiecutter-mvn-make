@@ -9,18 +9,18 @@
 
 ### To build
 
-`mvn test`
+`make test`
 
 
 ### Release process
 
 - Develop, develop, develop
 - Commit any outstanding changes
-- Verify build passes with `mvn test`
-- Update versions to release version with `mvn versions:set -DnewVersion=1.0.2`
+- Verify build passes with `make test`
+- Update versions to release version with `mvn versions:set -DnewVersion=0.0.2`
 - Commit release version
 - Run deployment with: `mvn clean deploy -P release`
-- Update versions to next snapshot version: `mvn versions:set -DnewVersion=1.0.2-SNAPSHOT`
+- Update versions to next snapshot version: `mvn versions:set -DnewVersion=0.0.2-SNAPSHOT`
 - Commit new snapshot version
 - Develop, develop, develop and rinse and repeat
 

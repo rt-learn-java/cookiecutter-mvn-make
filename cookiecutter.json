@@ -3,6 +3,7 @@
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "project_short_description": "A short description to add to Github",
     "group_short_id": "The last token of the group id, to be appended to com.github.roycetech",
+    "group_package": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "artifact_id": "The maven artifact id (e.g. rule-engine)",
     "license": ["MIT", "Apache Software License 2.0"],
     "year": "2020"
